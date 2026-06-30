@@ -158,41 +158,50 @@
         <div class="card">
           <h3>Histórico</h3>
           <p>
-            Considerada uma das primeiras linguagens de alto nível da história.
+           O Fortran (Formula Translation) foi a primeira linguagem de programação de alto nível amplamente utilizada. Criado pela IBM e liderado por John Backus, foi lançado em 1957 para facilitar cálculos científicos e de engenharia. Ao longo dos anos recebeu diversas atualizações, permanecendo importante em pesquisas, simulações e computação de alto desempenho.
           </p>
         </div>
 
         <div class="card">
           <h3>Origem</h3>
-          <p>Desenvolvida pela IBM em 1957.</p>
+          <p>O Fortran surgiu nos Estados Unidos dentro da IBM. Seu desenvolvimento foi motivadopela necessidade de criar uma linguagem que facilitasse cálculos matemáticos
+complexos utilizados em pesquisas científicas, engenharia e projetos militares. Seusucesso foi tão grande que serviu de inspiração para diversas linguagens criadas
+posteriormente.</p>
         </div>
 
         <div class="card">
           <h3>Paradigma</h3>
-          <p>Imperativo, Procedural e Orientado a Objetos.</p>
+          <p>O Fortran é classificado como uma linguagem de alto nível e inicialmente seguia oparadigma procedural ou estruturado, no qual o programa é organizado emprocedimentos e funções. Com a evolução da linguagem, versões mais recentes
+passaram a oferecer suporte à programação orientada a objetos, permitindo maior
+reutilização de código e organização de projetos maiores.</p>
         </div>
 
         <div class="card">
           <h3>Criador(es)</h3>
-          <p>Equipe liderada por John Backus.</p>
+          <p>Seu principal criador foi John Backus, juntamente com uma equipe de engenheiros epesquisadores da IBM. Posteriormente, John Backus recebeu diversos prêmios por suacontribuição à ciência da computação.</p>
         </div>
 
         <div class="card">
           <h3>Finalidade Principal</h3>
-          <p>Computação científica e engenharia.</p>
+          <p>O Fortran foi desenvolvido para resolver problemas matemáticos e científicos de grandecomplexidade. Atualmente, é muito utilizado em áreas como engenharia civil, engenharia mecânica, meteorologia, física, química, astronomia, economia e simulaçõescomputacionais, principalmente em supercomputadores.</p>
         </div>
 
         <div class="card">
           <h3>Sintaxe e Semântica</h3>
-          <p>Estrutura voltada para cálculos matemáticos.</p>
+          <p>A sintaxe do Fortran foi criada para ser simples e próxima da linguagemmatemática. Grande parte dos comandos utiliza palavras em inglês, como PRINT, READ, IFe DO. Sua semântica é voltada principalmente para cálculos numéricos e processamento de
+grandes quantidades de dados científicos.</p>
         </div>
       </div>
 
       <div class="code-box">
         <pre><code>
-PROGRAM Hello
-PRINT *, "Olá Mundo!"
-END PROGRAM Hello
+PROGRAM Media
+REAL :: nota1, nota2, media
+PRINT *, "Digite duas notas:"
+READ *, nota1, nota2
+media = (nota1 + nota2)/2
+PRINT *, "Média:", media
+END PROGRAM Media
 </code></pre>
       </div>
     </section>
@@ -205,40 +214,66 @@ END PROGRAM Hello
       <div class="cards">
         <div class="card">
           <h3>Histórico</h3>
-          <p>Criada em 1991.</p>
+          <p>O Python é uma linguagem de programação de alto nível criada por Guido van Rossum, com desenvolvimento iniciado em 1989 e primeira versão lançada em 1991. Seu objetivo era criar uma linguagem simples, legível e eficiente. Com o tempo, tornou-se uma das linguagens mais populares do mundo, sendo amplamente utilizada em inteligência artificial, ciência de dados, automação, desenvolvimento web e computação em nuvem.</p>
         </div>
 
         <div class="card">
           <h3>Origem</h3>
-          <p>Desenvolvida na Holanda.</p>
+          <p>O Python surgiu no Centro de Matemática e Informática (CWI), na Holanda. Foi desenvolvido como sucessor da linguagem ABC, buscando maior simplicidade e flexibilidade. Desde sua criação é um software livre, mantido por uma grande comunidade de desenvolvedores.</p>
         </div>
 
         <div class="card">
           <h3>Paradigma</h3>
-          <p>Orientado a Objetos, Funcional e Imperativo.</p>
+          <p>O Python é uma linguagem multiparadigma, oferecendo suporte à:
+
+Programação estruturada;
+Programação orientada a objetos;
+Programação funcional;
+Programação imperativa.
+
+Essa flexibilidade permite seu uso em diversos tipos de projetos.</p>
         </div>
 
         <div class="card">
           <h3>Criador</h3>
-          <p>Guido van Rossum.</p>
+          <p>O criador do Python é o cientista da computação holandês Guido van Rossum. Durante muitos anos, Guido foi conhecido como o Benevolent Dictator For Life
+(BDFL), título informal dado ao responsável pelas decisões finais sobre a evoluçãodalinguagem. Em 2018, ele deixou essa função, e atualmente o desenvolvimento do
+Python é coordenado pela Python Software Foundation, organização semfins lucrativosresponsável por promover e manter a linguagem</p>
         </div>
 
         <div class="card">
           <h3>Finalidade</h3>
-          <p>Desenvolvimento geral, IA e Ciência de Dados.</p>
+          <p>O Python é uma linguagem de uso geral, utilizada principalmente em:
+
+desenvolvimento web;
+inteligência artificial;
+ciência e análise de dados;
+automação de tarefas;
+desenvolvimento de jogos;
+computação científica;
+Internet das Coisas (IoT);
+criação de APIs e serviços em nuvem.</p>
         </div>
 
         <div class="card">
-          <h3>Variáveis</h3>
-          <p>Tipagem dinâmica.</p>
+          <h3>Sintaxe e Semântica</h3>
+          <p>A sintaxe do Python é simples e organizada. Diferentemente de outras linguagens, utiliza indentação para definir blocos de código, tornando os programas mais fáceis de ler. Seus comandos são escritos em inglês e possuem significado intuitivo.</p>
         </div>
       </div>
 
       <div class="code-box">
         <pre><code>
-nome = "Mundo"
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
 
-print("Olá", nome)
+media = (nota1 + nota2) / 2
+
+print("Média:", media)
+
+if media >= 6:
+    print("Aluno aprovado!")
+else:
+    print("Aluno reprovado.")
 </code></pre>
       </div>
     </section>
@@ -251,42 +286,65 @@ print("Olá", nome)
       <div class="cards">
         <div class="card">
           <h3>Histórico</h3>
-          <p>Linguagem criada nos anos 80.</p>
+          <p>O Objective-C é uma linguagem de programação criada por Brad Cox e Tom Love no início da década de 1980. Seu objetivo era combinar a eficiência da linguagem C com os conceitos da programação orientada a objetos. A linguagem ganhou destaque quando foi adotada pela empresa NeXT e, posteriormente, pela Apple para o desenvolvimento de aplicativos para macOS e iOS. Embora hoje o Swift seja a principal linguagem da Apple, o Objective-C ainda é utilizado na manutenção de sistemas e aplicativos existentes.</p>
         </div>
 
         <div class="card">
           <h3>Origem</h3>
-          <p>Extensão da linguagem C.</p>
+          <p>O Objective-C surgiu nos Estados Unidos, desenvolvido pela empresa Stepstone. Foi inspirado na linguagem Smalltalk e criado para facilitar o desenvolvimento de aplicações orientadas a objetos com alto desempenho.</p>
         </div>
 
         <div class="card">
           <h3>Paradigma</h3>
-          <p>Orientado a Objetos.</p>
+          <p>O Objective-C é uma linguagem multiparadigma, oferecendo suporte à:
+
+Programação orientada a objetos;
+Programação procedural;
+Programação orientada a mensagens.
+
+Essa combinação proporciona flexibilidade para o desenvolvimento de aplicações complexas.</p>
         </div>
 
-        <div class="card">
-          <h3>Criadores</h3>
-          <p>Brad Cox e Tom Love.</p>
-        </div>
+        
 
         <div class="card">
           <h3>Finalidade</h3>
-          <p>Aplicações para macOS e iOS.</p>
+          <p>O Objective-C foi desenvolvido principalmente para criar aplicativos para o ecossistema da Apple, sendo utilizado em:
+
+aplicativos para iPhone e iPad;
+aplicativos para computadores Mac;
+sistemas para macOS e iOS;
+manutenção de aplicações legadas.</p>
         </div>
 
         <div class="card">
           <h3>Semântica</h3>
-          <p>Mensagens entre objetos.</p>
+          <p>Sua sintaxe é baseada na linguagem C, mas adiciona recursos de programação orientada a objetos. Uma de suas principais características é o envio de mensagens para objetos utilizando colchetes ([]).</p>
+        </div>
+        <div class="card">
+          <h3>Criadores</h3>
+          <p>Brad Cox e Tom Love.</p>
         </div>
       </div>
 
       <div class="code-box">
         <pre><code>
-#import &lt;Foundation/Foundation.h&gt;
+#import <Foundation/Foundation.h>
 
 int main() {
- NSLog(@"Olá Mundo");
- return 0;
+    float nota1 = 8.0;
+    float nota2 = 7.0;
+
+    float media = (nota1 + nota2) / 2;
+
+    NSLog(@"Média: %.1f", media);
+
+    if (media >= 6)
+        NSLog(@"Aluno aprovado!");
+    else
+        NSLog(@"Aluno reprovado.");
+
+    return 0;
 }
 </code></pre>
       </div>
@@ -300,42 +358,66 @@ int main() {
       <div class="cards">
         <div class="card">
           <h3>Histórico</h3>
-          <p>Lançada em 1995.</p>
+          <p>O Delphi é uma linguagem de programação e um ambiente de desenvolvimento (IDE) lançado em 1995 pela Borland. Baseado no Object Pascal, foi criado para facilitar o desenvolvimento de aplicações com interface gráfica no Windows. Sua rapidez e facilidade de uso fizeram com que fosse amplamente utilizado em sistemas comerciais, empresariais e governamentais. Atualmente, é mantido pela Embarcadero Technologies e continua sendo utilizado principalmente na manutenção de sistemas legados e no desenvolvimento de aplicações corporativas.</p>
         </div>
 
         <div class="card">
           <h3>Origem</h3>
-          <p>Baseada em Object Pascal.</p>
+          <p>O Delphi foi desenvolvido nos Estados Unidos pela Borland com o objetivo de simplificar a criação de aplicações para Windows por meio da programação visual e da orientação a objetos. Seu nome foi inspirado no Oráculo de Delfos, da Grécia Antiga.</p>
         </div>
 
         <div class="card">
           <h3>Paradigma</h3>
-          <p>Orientado a Objetos.</p>
+          <p>O Delphi é uma linguagem multiparadigma, oferecendo suporte à:
+
+Programação estruturada;
+Programação orientada a objetos (POO);
+Programação orientada a eventos.
+
+Essa combinação torna a linguagem adequada para o desenvolvimento de sistemas de diferentes portes.</p>
         </div>
 
         <div class="card">
           <h3>Criador</h3>
-          <p>Borland.</p>
+          <p>O Delphi foi desenvolvido por uma equipe de engenheiros da Borland. Atualmente, seu desenvolvimento é responsabilidade da Embarcadero Technologies.</p>
         </div>
 
         <div class="card">
           <h3>Finalidade</h3>
-          <p>Aplicações Desktop.</p>
+          <p>O Delphi é utilizado principalmente no desenvolvimento de:
+
+sistemas empresariais (ERP);
+sistemas financeiros;
+softwares para clínicas e hospitais;
+sistemas escolares;
+automação comercial;
+aplicações com banco de dados;
+aplicativos para Windows, macOS, Android e iOS.</p>
         </div>
 
         <div class="card">
-          <h3>Variáveis</h3>
-          <p>Tipagem forte.</p>
+          <h3>Sintaxe e Semântica</h3>
+          <p>Sua sintaxe é baseada na linguagem Pascal, utilizando as palavras begin e end para delimitar blocos de código. As variáveis devem ser declaradas antes do uso e cada instrução normalmente termina com ponto e vírgula (;).</p>
         </div>
       </div>
 
       <div class="code-box">
         <pre><code>
-program Ola;
+var
+  nota1, nota2, media: Real;
 
 begin
- writeln('Olá Mundo');
-end.
+  nota1 := 8;
+  nota2 := 7;
+  media := (nota1 + nota2) / 2;
+
+  ShowMessage('Média: ' + FloatToStr(media));
+
+  if media >= 6 then
+    ShowMessage('Aluno aprovado!')
+  else
+    ShowMessage('Aluno reprovado.');
+end;
 </code></pre>
       </div>
     </section>
@@ -348,40 +430,68 @@ end.
       <div class="cards">
         <div class="card">
           <h3>Histórico</h3>
-          <p>Criada em 1995.</p>
+          <p>O PHP é uma linguagem de programação voltada para o desenvolvimento de aplicações web. Foi criada em 1994 por Rasmus Lerdorf, inicialmente para gerenciar informações de seu site pessoal. Com o tempo, evoluiu para uma linguagem completa, recebendo melhorias importantes como o Zend Engine e suporte à programação orientada a objetos. Atualmente, continua sendo uma das linguagens mais utilizadas na criação de sites e sistemas para a internet.</p>
         </div>
 
         <div class="card">
           <h3>Origem</h3>
-          <p>Desenvolvida para web.</p>
+          <p>O PHP surgiu no Canadá durante um projeto pessoal de Rasmus Lerdorf. Seu objetivo inicial era facilitar a criação de páginas dinâmicas, mas rapidamente passou a ser utilizado por desenvolvedores do mundo todo para aplicações web.</p>
         </div>
 
         <div class="card">
           <h3>Paradigma</h3>
-          <p>Imperativo e Orientado a Objetos.</p>
+          <p>O PHP é uma linguagem multiparadigma, oferecendo suporte à:
+
+Programação estruturada;
+Programação orientada a objetos (POO);
+Programação imperativa;
+Programação funcional.
+
+Essa flexibilidade permite seu uso em projetos simples e também em grandes sistemas.</p>
         </div>
 
         <div class="card">
           <h3>Criador</h3>
-          <p>Rasmus Lerdorf.</p>
+          <p>O principal criador do PHP foi Rasmus Lerdorf. Posteriormente, Zeev Suraski e Andi Gutmans contribuíram significativamente para a evolução da linguagem ao desenvolverem o Zend Engine, responsável pelo desempenho das versões modernas do PHP.</p>
         </div>
 
         <div class="card">
           <h3>Finalidade</h3>
-          <p>Desenvolvimento Web.</p>
+          <p>O PHP foi desenvolvido para criar páginas web dinâmicas e aplicações que interagem com bancos de dados. É amplamente utilizado em:
+
+desenvolvimento de sites;
+sistemas empresariais;
+lojas virtuais (e-commerce);
+blogs;
+plataformas de ensino;
+APIs;
+sistemas de cadastro e autenticação.</p>
         </div>
 
         <div class="card">
-          <h3>Variáveis</h3>
-          <p>Utilizam "$".</p>
+          <h3>Sintaxe e Semântica</h3>
+          <p>Os programas em PHP iniciam com <?php e, normalmente, terminam com ?>. Sua sintaxe é semelhante à da linguagem C, utilizando chaves ({}) para delimitar blocos de código e ponto e vírgula (;) ao final das instruções. O código é executado no servidor, gerando páginas HTML para o navegador.</p>
         </div>
       </div>
 
       <div class="code-box">
         <pre><code>
-&lt;?php
-echo "Olá Mundo!";
-?&gt;
+<?php
+
+$nota1 = 8;
+$nota2 = 7;
+
+$media = ($nota1 + $nota2) / 2;
+
+echo "Média: " . $media . "<br>";
+
+if ($media >= 6) {
+    echo "Aluno aprovado!";
+} else {
+    echo "Aluno reprovado.";
+}
+
+?>
 </code></pre>
       </div>
     </section>
